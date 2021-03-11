@@ -10,6 +10,7 @@ const axios = require('axios').default;
 const config = require('./config.json');
 const client = new Discord.Client();
 const prefix = config.prefix;
+const rank = config.rank
 
 let invtoken = config.inv_account;
 const servers = config.accounts;

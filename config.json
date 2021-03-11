@@ -1,6 +1,7 @@
 {
     "bot_token": "AAAAAAAAAABBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCC",
     "prefix": "!",
+    "ranks": "PAID",
 
     "accounts": [{
         "bonjour": "server 1 name",

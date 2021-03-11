@@ -124,6 +124,7 @@ client.on('guildMemberAdd', (member) => {
 client.on('message', (message) => {
     const logschannel = client.channels.cache.get(config.logs_channel_id);
 
+    if(message.member.roles.find("name", "PAID")){
     if (!message.guild) return;
     if (message.author.bot) return;
     if (message.channel.id == logschannel.id) {
@@ -155,8 +156,11 @@ client.on('message', (message) => {
                 .setTitle('You\'ve been successfully invited to the Plex Server')
                 .setDescription(`To accept this invite, check your email for the Plex account \`${res.user}\`, or click the following link:\n${res.url}`)
             message.author.send(embed);
-        });
-        return;
+            });
+            return;
+        }
+    }else{
+    return message.author.send(":x: You couldn't be invited to the plex server, because you don't have bought accsess")
     }
 
     if (!message.member.hasPermission('ADMINISTRATOR')) return;

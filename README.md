@@ -2,6 +2,7 @@
 # Plex Invite Bot
 
 A simple bot that makes inviting people through Discord easier.
+This fork makes it also easier to manage it for an paid Plex server
 
   
 ## Invite manually through commands

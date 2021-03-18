@@ -1,8 +1,3 @@
-/**
- * Plex Invite Bot 😳
- * Github: https://github.com/foobball
- */
-
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const async = require('async');
